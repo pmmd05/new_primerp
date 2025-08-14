@@ -11,7 +11,7 @@ const FormularioLogin = () => {
         clientCode === "";
 
     return (
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%" }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%", background: "#003865", minHeight: "100vh", justifyContent: "center" }}>
             <img src={process.env.PUBLIC_URL + "/LogoUrl.png"} alt="Logo" style={{ width: "80px", marginBottom: "24px" }} />
             <form style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: "16px", width: "250px" }}>
                 <label htmlFor="username">Usuario:</label>
@@ -21,7 +21,19 @@ const FormularioLogin = () => {
                     name="username"
                     value={username}
                     onChange={e => setUsername(e.target.value)}
-                    style={{ width: "100%" }}
+                    style={{
+                        width: "100%",
+                        padding: "10px",
+                        borderRadius: "6px",
+                        border: "1px solid #1976d2",
+                        fontSize: "15px",
+                        outline: "none",
+                        boxSizing: "border-box",
+                        background: "#f4f8fb",
+                        color: "#003865",
+                        marginBottom: "4px",
+                        transition: "border-color 0.2s"
+                    }}
                 />
                 <label htmlFor="password">Contraseña:</label>
                 <input
@@ -30,7 +42,19 @@ const FormularioLogin = () => {
                     name="password"
                     value={password}
                     onChange={e => setPassword(e.target.value)}
-                    style={{ width: "100%" }}
+                    style={{
+                        width: "100%",
+                        padding: "10px",
+                        borderRadius: "6px",
+                        border: "1px solid #1976d2",
+                        fontSize: "15px",
+                        outline: "none",
+                        boxSizing: "border-box",
+                        background: "#f4f8fb",
+                        color: "#003865",
+                        marginBottom: "4px",
+                        transition: "border-color 0.2s"
+                    }}
                 />
                 <label htmlFor="clientCode">Código de Cliente:</label>
                 <input
@@ -39,7 +63,19 @@ const FormularioLogin = () => {
                     name="clientCode"
                     value={clientCode}
                     onChange={e => setClientCode(e.target.value)}
-                    style={{ width: "100%" }}
+                    style={{
+                        width: "100%",
+                        padding: "10px",
+                        borderRadius: "6px",
+                        border: "1px solid #1976d2",
+                        fontSize: "15px",
+                        outline: "none",
+                        boxSizing: "border-box",
+                        background: "#f4f8fb",
+                        color: "#003865",
+                        marginBottom: "4px",
+                        transition: "border-color 0.2s"
+                    }}
                 />
                 <button
                     type="submit"
